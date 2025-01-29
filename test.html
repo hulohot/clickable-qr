@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QR Code Test Suite</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .qr-test {
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .qr-test img, .qr-test canvas, .qr-test svg {
+            max-width: 150px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        h2 {
+            margin-top: 30px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        .label {
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>QR Code Test Suite</h1>
+    
+    <h2>Standard QR Codes</h2>
+    <div class="grid" id="standardQR"></div>
+
+    <h2>Colored QR Codes</h2>
+    <div class="grid" id="coloredQR"></div>
+
+    <h2>Styled QR Codes</h2>
+    <div class="grid" id="styledQR"></div>
+
+    <h2>Edge Cases</h2>
+    <div class="grid" id="edgeCases"></div>
+
+    <script src="dist/test-bundle.js"></script>
+</body>
+</html> 

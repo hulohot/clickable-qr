@@ -1,0 +1,25 @@
+{
+    "name": "qr-code-tooltip",
+    "version": "1.0.0",
+    "scripts": {
+        "build": "webpack --config webpack.config.js",
+        "watch": "webpack --watch --config webpack.config.js",
+        "serve": "http-server -p 8080 -c-1",
+        "dev": "npm-run-all --parallel watch serve"
+    },
+    "dependencies": {
+        "jsqr": "^1.4.0",
+        "qrcode": "^1.5.4"
+    },
+    "devDependencies": {
+        "http-server": "^14.1.1",
+        "npm-run-all": "^4.1.5",
+        "webpack": "^5.97.1",
+        "webpack-cli": "^5.1.4"
+    },
+    "description": "",
+    "main": "index.js",
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}

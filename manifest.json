@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "QR Code Tooltip",
+    "version": "1.0",
+    "description": "Makes QR codes clickable and shows their content in tooltips",
+    "permissions": [
+        "activeTab",
+        "scripting",
+        "webRequest",
+        "storage"
+    ],
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["dist/content.js"],
+            "css": ["styles.css"]
+        }
+    ]
+}
